@@ -25,16 +25,14 @@
     {
       "id": "gender",
       "type": "select",
-      "label": "Gender",
-      "placeholder": "Choose your gender",
+      "label": "Select your gender",
+      "placeholder": "Select your gender",
       "required": true,
       "options": [
         {
-          "label": "Male",
           "value": "male"
         },
         {
-          "label": "Female",
           "value": "female"
         }
       ]
@@ -42,7 +40,7 @@
     {
       "id": "married",
       "type": "checkbox",
-      "label": "Married",
+      "label": "Married?",
       "placeholder": "Are you married?",
       "value": "Married?",
       "required": true
