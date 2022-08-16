@@ -1,0 +1,51 @@
+{
+  "form_heading": "Population Census",
+  "fields": [
+    {
+      "id": "firstName",
+      "type": "text",
+      "label": "First Name",
+      "placeholder": "Enter your first name",
+      "required": true
+    },
+    {
+      "id": "lastName",
+      "type": "text",
+      "label": "Last Name",
+      "placeholder": "Enter your last name",
+      "required": true
+    },
+    {
+      "id": "dob",
+      "type": "date",
+      "label": "Birthday",
+      "placeholder": "Enter your date of birth",
+      "required": true
+    },
+    {
+      "id": "gender",
+      "type": "select",
+      "label": "Gender",
+      "placeholder": "Choose your gender",
+      "required": true,
+      "options": [
+        {
+          "label": "Male",
+          "value": "male"
+        },
+        {
+          "label": "Female",
+          "value": "female"
+        }
+      ]
+    },
+    {
+      "id": "married",
+      "type": "checkbox",
+      "label": "Married",
+      "placeholder": "Are you married?",
+      "value": "Married?",
+      "required": true
+    }
+  ]
+}
