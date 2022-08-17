@@ -14,14 +14,31 @@ const Element = ({
   }
 }) => {
   console.log("field type", type)
-  switch (type) {
+  switch (type.toString().toLowerCase()) {
     case 'text':
     case 'date':
     case 'checkbox':
-    case 'boolean':
       return (<Input
           id={id}
           type={type}
+          label={label}
+          placeholder={placeholder}
+          required={required}
+          value={value}
+      />)
+    case 'string':
+      return (<Input
+          id={id}
+          type="text"
+          label={label}
+          placeholder={placeholder}
+          required={required}
+          value={value}
+      />)
+    case 'boolean':
+      return (<Input
+          id={id}
+          type="checkbox"
           label={label}
           placeholder={placeholder}
           required={required}
