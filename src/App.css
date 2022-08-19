@@ -3,3 +3,32 @@
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
+
+.app {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+  ),
+  url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg"), center;
+  background-size: cover;
+}
+
+form {
+  background-color: #efedf3;
+  padding: 1em 5em;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #23122f
+}
+
+button {
+  background-color: #071f77 !important;
+  font-weight: bold !important;
+}

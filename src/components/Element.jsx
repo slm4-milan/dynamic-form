@@ -10,10 +10,10 @@ const Element = ({
     placeholder,
     required,
     value,
-    options
+    options,
+    checked
   }
 }) => {
-  console.log("field type", type)
   switch (type.toString().toLowerCase()) {
     case 'text':
     case 'date':
@@ -25,6 +25,7 @@ const Element = ({
           placeholder={placeholder}
           required={required}
           value={value}
+          checked={checked}
       />)
     case 'string':
       return (<Input
@@ -43,6 +44,7 @@ const Element = ({
           placeholder={placeholder}
           required={required}
           value={value}
+          checked={checked}
       />)
     case 'select':
       return (<Select
