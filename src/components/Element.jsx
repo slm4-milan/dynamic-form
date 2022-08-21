@@ -6,6 +6,7 @@ const Element = ({
   field: {
     id,
     type,
+    name,
     label,
     placeholder,
     required,
@@ -14,6 +15,7 @@ const Element = ({
     checked
   }
 }) => {
+
   switch (type.toString().toLowerCase()) {
     case 'text':
     case 'date':
@@ -21,6 +23,7 @@ const Element = ({
       return (<Input
           id={id}
           type={type}
+          name={name}
           label={label}
           placeholder={placeholder}
           required={required}
@@ -31,6 +34,7 @@ const Element = ({
       return (<Input
           id={id}
           type="text"
+          name={name}
           label={label}
           placeholder={placeholder}
           required={required}
@@ -40,6 +44,7 @@ const Element = ({
       return (<Input
           id={id}
           type="checkbox"
+          name={name}
           label={label}
           placeholder={placeholder}
           required={required}
@@ -50,6 +55,7 @@ const Element = ({
       return (<Select
           id={id}
           type={type}
+          name={name}
           label={label}
           placeholder={placeholder}
           required={required}

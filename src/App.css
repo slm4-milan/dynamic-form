@@ -10,11 +10,12 @@
   justify-content: center !important;
   flex-direction: column !important;
   height: 100vh;
+
   background: linear-gradient(
       rgba(255, 255, 255, 0.1),
       rgba(255, 255, 255, 0.1)
   ),
-  url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg"), center;
+  url("../public/pexels-photo-2847648.png"), center;
   background-size: cover;
 }
 
@@ -29,6 +30,35 @@ h2 {
 }
 
 button {
-  background-color: #071f77 !important;
+  background-color: #8e3f81 !important;
   font-weight: bold !important;
+  border-color: #8e3f81 !important;
+  color: #FFF !important;
+
 }
+
+button:active {
+  border-color: #280228 !important;
+  background-color: #421b3c !important;
+
+}
+
+button:focus {
+  background-color: #57164e !important;
+  border-color: #0e030d !important;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.form-field {
+  height: 70px;
+}
+
+span {
+  font-weight: bolder;
+}
+
+
+
