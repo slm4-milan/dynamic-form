@@ -16,7 +16,7 @@ const Input = ({
   const {formErrors} = useContext(FormErrorsContext)
 
   function dangerClass() {
-    return !!formErrors[name] ? 'border-danger' : 'milan';
+    return !!formErrors[name] ? 'border-danger' : '';
   }
 
   return (
