@@ -17,6 +17,7 @@ const Form = () => {
       newSchemaKeys[field.name] = [field.value, field.label]
     })
     setSchemaKeys(newSchemaKeys)
+    console.log(newSchemaKeys)
   }, [elements])
 
   useEffect(() => {
@@ -37,9 +38,9 @@ const Form = () => {
         if (typeof fieldValue !== "boolean") {
           errors[key] = `${capitalizeFirstLetter(label)} is required`
         }
-        break
       }
     }
+    console.log(errors)
     return errors;
   }
 

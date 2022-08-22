@@ -49,7 +49,7 @@
     },
     {
       "id": "married",
-      "type": "checkbox",
+      "type": "boolean",
       "name": "married",
       "label": "Married?",
       "placeholder": "Are you married?",
