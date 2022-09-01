@@ -14,8 +14,8 @@
   background: linear-gradient(
       rgba(255, 255, 255, 0.1),
       rgba(255, 255, 255, 0.1)
-  ),
-  url("../public/pexels-photo-2847648.png"), center;
+    ),
+    url("../public/pexels-photo-2847648.png"), center;
   background-size: cover;
 }
 
@@ -26,21 +26,19 @@ form {
 }
 
 h2 {
-  color: #23122f
+  color: #23122f;
 }
 
 button {
   background-color: #8e3f81 !important;
   font-weight: bold !important;
   border-color: #8e3f81 !important;
-  color: #FFF !important;
-
+  color: #fff !important;
 }
 
 button:active {
   border-color: #280228 !important;
   background-color: #421b3c !important;
-
 }
 
 button:focus {
@@ -56,9 +54,10 @@ button:hover {
   height: 70px;
 }
 
+.form-check {
+  height: auto;
+}
+
 span {
   font-weight: bolder;
 }
-
-
-

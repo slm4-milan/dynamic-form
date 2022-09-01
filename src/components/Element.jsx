@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Input from "./elements/Input";
 import Select from "./elements/Select";
 
@@ -12,15 +12,18 @@ const Element = ({
     required,
     value,
     options,
-    checked
-  }
+    checked,
+  },
 }) => {
-
+  if (type === "String") {
+    value = "";
+  }
   switch (type.toString().toLowerCase()) {
-    case 'text':
-    case 'date':
-    case 'checkbox':
-      return (<Input
+    case "text":
+    case "date":
+    case "checkbox":
+      return (
+        <Input
           id={id}
           type={type}
           name={name}
@@ -29,9 +32,11 @@ const Element = ({
           required={required}
           value={value}
           checked={checked}
-      />)
-    case 'string':
-      return (<Input
+        />
+      );
+    case "string":
+      return (
+        <Input
           id={id}
           type="text"
           name={name}
@@ -39,9 +44,11 @@ const Element = ({
           placeholder={placeholder}
           required={required}
           value={value}
-      />)
-    case 'boolean':
-      return (<Input
+        />
+      );
+    case "boolean":
+      return (
+        <Input
           id={id}
           type="checkbox"
           name={name}
@@ -50,9 +57,11 @@ const Element = ({
           required={required}
           value={value}
           checked={checked}
-      />)
-    case 'select':
-      return (<Select
+        />
+      );
+    case "select":
+      return (
+        <Select
           id={id}
           type={type}
           name={name}
@@ -60,7 +69,9 @@ const Element = ({
           placeholder={placeholder}
           required={required}
           value={value}
-          options={options}/>)
+          options={options}
+        />
+      );
     default:
       return null;
   }
